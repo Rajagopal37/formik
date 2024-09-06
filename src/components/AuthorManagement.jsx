@@ -46,7 +46,7 @@ const AuthorManagement = () => {
   return (
     <div className="container mt-4">
       <h2>Author Management</h2>
-      <div className="form-group">
+      <div className="form-group ">
         <label htmlFor="authorSelect">Select Author</label>
         <select
           id="authorSelect"

@@ -3,13 +3,19 @@ import BookManagement from "./BookMAnagement";
 import AuthorManagement from "./AuthorManagement";
 
 const Dashboard = () => (
-  <div className="container mt-4">
-    <h1>Library Management Dashboard</h1>
-    <div className="d-flex justify-content-center align-items-center">
-      <BookManagement />
-      <AuthorManagement />
+  <>
+    <div className="row d-flex justify-content-center">
+      <h1 className="text-center border rounded border-dark w-75  p-3">
+        Library Management Dashboard
+      </h1>
+      <div className="col-4">
+        <BookManagement />
+      </div>
+      <div className="col-4">
+        <AuthorManagement />
+      </div>
     </div>
-  </div>
+  </>
 );
 
 export default Dashboard;

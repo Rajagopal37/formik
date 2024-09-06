@@ -21,58 +21,71 @@ const BookForm = ({ book, onSubmit }) => {
       onSubmit={onSubmit}
     >
       {() => (
-        <Form>
-          <div className="form-group">
-            <label htmlFor="title">Title</label>
-            <Field
-              type="text"
-              id="title"
-              name="title"
-              className="form-control"
-            />
-            <ErrorMessage
-              name="title"
-              component="div"
-              className="text-danger"
-            />
+        <>
+          <div>
+            <Form>
+              <div className="form-group my-2">
+                <label htmlFor="title">Title</label>
+                <Field
+                  type="text"
+                  id="title"
+                  name="title"
+                  className="form-control"
+                />
+                <ErrorMessage
+                  name="title"
+                  component="div"
+                  className="text-danger"
+                />
+              </div>
+              <div className="form-group mt-2">
+                <label htmlFor="author">Author</label>
+                <Field
+                  type="text"
+                  id="author"
+                  name="author"
+                  className="form-control"
+                />
+                <ErrorMessage
+                  name="author"
+                  component="div"
+                  className="text-danger"
+                />
+              </div>
+              <div className="form-group my-2">
+                <label htmlFor="isbn">ISBN Number</label>
+                <Field
+                  type="text"
+                  id="isbn"
+                  name="isbn"
+                  className="form-control"
+                />
+                <ErrorMessage
+                  name="isbn"
+                  component="div"
+                  className="text-danger"
+                />
+              </div>
+              <div className="form-group mb-2">
+                <label htmlFor="publicationDate">Publication Date</label>
+                <Field
+                  type="date"
+                  id="publicationDate"
+                  name="publicationDate"
+                  className="form-control"
+                />
+                <ErrorMessage
+                  name="publicationDate"
+                  component="div"
+                  className="text-danger"
+                />
+              </div>
+              <button type="submit" className="btn btn-primary">
+                Submit
+              </button>
+            </Form>
           </div>
-          <div className="form-group">
-            <label htmlFor="author">Author</label>
-            <Field
-              type="text"
-              id="author"
-              name="author"
-              className="form-control"
-            />
-            <ErrorMessage
-              name="author"
-              component="div"
-              className="text-danger"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="isbn">ISBN Number</label>
-            <Field type="text" id="isbn" name="isbn" className="form-control" />
-            <ErrorMessage name="isbn" component="div" className="text-danger" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="publicationDate">Publication Date</label>
-            <Field
-              type="date"
-              id="publicationDate"
-              name="publicationDate"
-              className="form-control"
-            />
-            <ErrorMessage
-              name="publicationDate"
-              component="div"
-              className="text-danger"
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        </Form>
+        </>
       )}
     </Formik>
   );

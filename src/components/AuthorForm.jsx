@@ -16,13 +16,13 @@ const AuthorForm = ({ author, onSubmit }) => {
       onSubmit={onSubmit}
     >
       {() => (
-        <Form>
-          <div className="form-group">
+        <Form className="p-2">
+          <div className="form-group my-2">
             <label htmlFor="name">Name</label>
             <Field type="text" id="name" name="name" className="form-control" />
             <ErrorMessage name="name" component="div" className="text-danger" />
           </div>
-          <div className="form-group">
+          <div className="form-group my-2">
             <label htmlFor="birthDate">Birth Date</label>
             <Field
               type="date"
@@ -36,7 +36,7 @@ const AuthorForm = ({ author, onSubmit }) => {
               className="text-danger"
             />
           </div>
-          <div className="form-group">
+          <div className="form-group my-2">
             <label htmlFor="biography">Biography</label>
             <Field
               as="textarea"

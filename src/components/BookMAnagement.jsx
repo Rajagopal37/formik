@@ -45,7 +45,7 @@ const BookManagement = () => {
   return (
     <div className="container mt-4">
       <h2>Book Management</h2>
-      <div className="form-group">
+      <div className="form-group my-2">
         <label htmlFor="bookSelect">Select Book</label>
         <select
           id="bookSelect"
